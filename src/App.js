@@ -3,7 +3,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WeatherBox from './component/WeatherBox';
 import WeatherButton from './component/WeatherButton'
-import ClipLoader from "react-spinners/ClipLoader";
 
 // 1. 앱이 실행되자마자 현재위치기반의 날씨가 보인다.
 // 2. 날씨 정보에는 도시, 섭씨, 화씨, 날씨상태가 들어간다.
@@ -67,7 +66,7 @@ const choicCity = (city) =>{
 }
 
   useEffect(()=>{
-    if(city==""){
+    if(city===""){
       getCurrentLocation();
     } else{
       getWeatherByCity();

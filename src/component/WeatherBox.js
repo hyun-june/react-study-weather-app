@@ -8,7 +8,6 @@ const WeatherBox = ({ weather, cities, setCity, loading , selectCity }) => {
 
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
-      href=""
       ref={ref}
       onClick={(e) => {
         e.preventDefault();
