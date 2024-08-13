@@ -58,7 +58,7 @@ const WeatherBox = ({ weather, cities, setCity, loading , selectCity }) => {
         </div>:
         <div className="weather-box">
         <div>{weather?.name}</div>
-        <h2>{weather?.main.temp}℃</h2>
+        <h2>{weather?.main.temp !== undefined ? `${weather.main.temp}℃` : 'Loading...'}</h2>
         <div>
           <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`} alt=""/>
         </div>
