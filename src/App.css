@@ -1,0 +1,64 @@
+body{
+  background: url(https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-box{
+  border: 3px solid white;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: lightcyan;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  margin-left: 130px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.weather-container{
+  display: flex;
+}
+
+.city-dropdown{
+  margin-top: 1rem;
+}
+
+#dropdown-basic{
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  width: 130px;
+  border: none;
+}
+
+#dropdown-basic:hover{
+  background-color: whitesmoke;
+}
+
+.dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto; 
+}
+
+#location{
+  background-color: white;
+  color: black;
+  border: 1px dashed lightgray;
+}
+
+#location:hover{
+  background-color: lightgrey;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
